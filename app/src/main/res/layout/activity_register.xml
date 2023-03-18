@@ -12,8 +12,8 @@
         android:layout_height="56dp"
         android:layout_marginBottom="170dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottom0f="parent"
-        app:layout_constraintEnd_toEnd0f="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegister">
@@ -51,10 +51,9 @@
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTop0f="@+id/txtPass"
-        app:layout_constPaintEnd_toEnd0f="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtPass"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnRegister"
@@ -67,7 +66,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constPaintStaPt_toStart0f="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPass" />
     <EditText
         android:id="@+id/txtPass"
@@ -82,6 +81,6 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/btnRegister"
         app:layout_constraintStart_toStartOf="@+id/txtEmail"
-        app:layout_constPaintTop_toBottomOf="@+id/txtEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
